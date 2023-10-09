@@ -11,13 +11,13 @@
 ___________________
 To start the project you need:
 ___________________
-docker compose up -d \
-docker compose run\
-composer bash \
+docker-compose up -d \
+docker-compose run\
 cd test\
+composer sh \
 composer install\
 exit\
-docker compose exec php\
+docker-compose exec php\
 cd test\
 php artisan migrate
 ___________________
